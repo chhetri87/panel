@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #007bff, #6c63ff);
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .loader {
+      border: 5px solid rgba(255, 255, 255, 0.3);
+      border-top: 5px solid #fff;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 500;
+    }
+
+    p {
+      opacity: 0.8;
+      font-size: 14px;
+    }
+  </style>
+  <script>
+    // Redirect after 3 seconds
+    setTimeout(function() {
+      window.location.href = "https://forms.gle/UruogVBEsc275fpV9";
+    }, 3000);
+  </script>
+</head>
+<body>
+  <div class="loader"></div>
+  <h2>Redirecting you to the form...</h2>
+  <p>Please wait a moment.</p>
+</body>
+</html>
